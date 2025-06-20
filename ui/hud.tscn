@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Bars" type="VBoxContainer" parent="HUD"]
+anchor_right = 0.3
+anchor_bottom = 0.2
+margin_left = 10.0
+margin_top = 10.0
+
+[node name="HungerBar" type="ProgressBar" parent="HUD/Bars"]
+[node name="EnergyBar" type="ProgressBar" parent="HUD/Bars"]
+[node name="MoodBar" type="ProgressBar" parent="HUD/Bars"]

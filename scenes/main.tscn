@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmsy8oqr8bkrt"]
+
+[ext_resource type="PackedScene" path="res://scenes/greenville.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://ui/hud.tscn" id="3"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Greenville" parent="." instance=ExtResource("1")]
+
+[node name="Player" parent="Greenville" instance=ExtResource("2")]
+
+[node name="HUD" parent="." instance=ExtResource("3")]
